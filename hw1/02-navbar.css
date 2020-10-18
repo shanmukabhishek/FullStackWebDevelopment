@@ -5,3 +5,30 @@
 }
 
 /* The accent color used is #008080 */
+
+li{
+	font-size: 30px;
+	float: left;
+	margin: 30px;
+}
+ul{
+	list-style-type: none;
+
+}
+a{
+	text-decoration: none;
+}
+span{
+	padding: 5px;
+
+}
+span:hover{
+	border-bottom: 7px solid #00cc99;
+	color: #00cc99;
+}
+span:active{
+	color:red;
+}
+.ul:focus-visible{
+	color: orange ;
+}
