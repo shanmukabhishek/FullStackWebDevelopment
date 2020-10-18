@@ -9,10 +9,43 @@
       type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="09-bootstrap-form.css" />
     <title>Bootstrap Form Exercise</title>
   </head>
-  <body>
+  <body style="background-color: #262625;">
     /* Add your code here */
+    <div class="container">
+      <div class="row">
+        
+      
+      <div class="col-sm-8 col-md-6 mx-auto formstyle">
+        <h2 align="center">CONTACT FORM</h2>
+  <form action="/action_page.php">
+    <div class="row">
+        <label for="fname">Name</label>
+        <input type="text" required >
+      </div>
+    <div class="row">
+        <label for="email">Email address</label>
+        <input type="text" required >
+      </div>
+    <div class="row">
+        <label for="Comments">Submit your message</label>
+        <textarea id="Comments" style="height:200px" required></textarea>
+    </div>
+    <div class="row">
+    <label><input type="checkbox" value="" required>Sign up for the newsletter</label>
+  </div>
+    <div class="row">
+      <input type="submit" value="Submit" style="margin-right: 10px; background-color: #22bdb7;">
+      <input type="submit" value="Reset">
+    </div>
+  
+  </form>
+        
+      </div>
+      </div>
+    </div>
   </body>
 </html>
