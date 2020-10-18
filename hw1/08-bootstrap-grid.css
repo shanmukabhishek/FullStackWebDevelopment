@@ -1,7 +1,6 @@
 * {
   box-sizing: border-box;
   font-size: 1.1em;
-  color: white;
 }
 /* 
   Colors used in this exercise: 
@@ -12,3 +11,33 @@
   background-color: var(--red);
   background-color: darkgreen; 
 */
+.col-md-2{
+  background-color: navy;
+  height: 100px;
+  border: 1px solid white;
+}
+.col-md-3{
+  background-color: purple;
+  height: 100px;
+  border: 1px solid white;
+}
+.col-md-6{
+  background-color: teal;
+  height: 100px;
+  border: 1px solid white;
+}
+.col-md-8{
+  background-color: var(--red);
+  height: 100px;
+  border: 1px solid white;
+}
+.col-md-4{
+  background-color: mediumvioletred;
+  height: 100px;
+  border: 1px solid white;
+}
+.col-md-12{
+  background-color: darkgreen;
+  height: 100px;
+  border: 1px solid white;
+}
