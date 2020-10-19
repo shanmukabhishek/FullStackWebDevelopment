@@ -7,7 +7,7 @@
 .flex-item {
   width: 160px;
   height: 80px;
-  margin: 1px;
+  margin: 10px;
   padding: 10px;
   background-color: purple;
   color: white;
@@ -15,3 +15,32 @@
 }
 
 /* Add your code here */
+.flex-container{
+  display: flex;
+  flex: all;
+  flex-flow: row wrap;
+}
+
+.item1, .item2, .item3, .item4, .item5, .item6{
+  flex: 0 1 15%;
+  align-self: center;
+  margin: auto;
+  justify-content: space-around;
+
+}
+.item7, .item8, .item9, .item10{
+  align-self: center;
+  margin: auto;
+  justify-content: space-around;
+/*  padding: 8px;
+  margin: 10px;
+  margin-right: 60px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 600px) {
+    .item1, .item2, .item3, .item4, .item5, .item6, .item7, .item8, .item9, .item10{
+    width: 100%;
+    margin-top: 0;
+  }
+}*/
