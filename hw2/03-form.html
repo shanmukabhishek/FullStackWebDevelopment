@@ -12,10 +12,34 @@
     <link rel="stylesheet" href="03-form.css" />
     <title>JavaScript Form Exercise</title>
   </head>
+  
   <body class="bg-dark">
+    
     <form class="bg-light border rounded w-50 mx-auto mt-5 p-3">
-      <h2 class="mt-2 mb-4">Contact Form</h2>
-    </form>
+      <div class="container">
+      <h2 align="center" class="mt-2 mb-4">Contact Form</h2>
+        <form action="/action_page.php">
+          <div class="row">
+              <label for="name">Name</label>
+              <input type="text" id = "name"  required >
+            </div>
+          <div class="row">
+              <label for="email" >Email address</label>
+              <input type="text" id="email" required >
+            </div>
+          <div class="row">
+              <label for="Comments" >Comments</label>
+              <textarea id="comments" style="height:200px" id="comments" required></textarea>
+          </div>
+          <div class="row">
+          <label><input type="checkbox" value="" required id="check">Sign up for newsletter</label>
+        </div>
+          <div class="row">
+            <input type="button" value="Submit" onclick="handleSubmit()" required> </div>
+            <div class="row">
+              <input type="reset" value="Reset" required>
+          </div>
+      </form>
     <script src="03-form.js"></script>
   </body>
 </html>
