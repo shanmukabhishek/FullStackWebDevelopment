@@ -12,7 +12,7 @@ function getpage() {
     return fetch(url).then(response => response.json());
 }
 app.get('/', (req, res) => {
-    res.render('api');
+    res.send("Welcome to REST api. </br></br> Try using these routes : </br>/main</br>/populous</br>/regions");
 });
 
 app.get('/main', (req, res) => {
@@ -33,7 +33,7 @@ app.get('/populous', (req, res) => {
         let renderedData = [];
         response.forEach(details => {
             if(details.population >= 20000000)
-                renderedData.push(details.name + " - "+details.population);
+                renderedData.push(details.name + " - "+details.population.toLocaleString());
         });
        res.render('api', {
            renderedData
