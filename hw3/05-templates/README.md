@@ -10,4 +10,5 @@ This is a node and express js application which uses pug templating engine.
 	Initially you will see welocme message stating you to try the routes on the page.
 	So, after typing "http://localhost:5000" add '/main'("http://localhost:5000/main") and you will see the output of that route(Countries and their Capitals).
 	Next try "http://localhost:5000/populous" and "http://localhost:5000/region" for countries with atleast 20 million population in descending order and regions with its number of countries respectively.
+	The pug file is in the views folder of the directory.
  	
