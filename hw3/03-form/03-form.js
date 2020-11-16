@@ -1,12 +1,13 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 const port = process.env.PORT || 5000;
 
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: false }));
-
+app.use(express.static(path.join((__dirname,'public'))));
 app.get('/', function (req, res) {
-    res.sendFile('D:/us/Portland State University/Full Stack/webdev-exercises/hw3/03-form/index.html');
+    res.sendFile('index.html');
 });
 
 app.post('/submit', function (req, res) {
